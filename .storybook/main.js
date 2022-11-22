@@ -1,21 +1,19 @@
 module.exports = {
-  stories: [
-    "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx|svelte)",
-  ],
-  staticDirs: ["../public"],
+  stories: ['../src/components/**/*.stories.js'],
+  staticDirs: ['../public'],
   addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-svelte-csf",
-    "@storybook/addon-interactions",
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-svelte-csf',
+    '@storybook/addon-interactions',
+    '@storybook/addon-a11y',
   ],
   features: {
     postcss: false,
     interactionsDebugger: true,
   },
-  framework: "@storybook/svelte",
+  framework: '@storybook/svelte',
   core: {
-    builder: "@storybook/builder-webpack4",
+    builder: '@storybook/builder-webpack4',
   },
 };
